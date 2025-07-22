@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cravory – Taste The Magic</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar">
+        <a href="#" class="logo">Cravory</a>
+        <ul class="nav-links">
+          <li><a href="#main">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main id="main">
+      <!-- Hero Section -->
+      <section class="landing">
+        <div class="carousel">
+          <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2" class="slide active" alt="Delicious Meal" />
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" class="slide" alt="Tasty Dish" />
+          <div class="carousel-buttons">
+            <button onclick="prevSlide()" aria-label="Previous Slide">❮</button>
+            <button onclick="nextSlide()" aria-label="Next Slide">❯</button>
+          </div>
+        </div>
+        <div class="landing-text">
+          <h2>"Life is uncertain. Eat dessert first."</h2>
+          <h1>Fresh & Tasty Meals</h1>
+          <p>We have the best meals in town. We serve it hot and fresh.</p>
+          <a href="#menu" class="button-primary">Order Now</a>
+        </div>
+      </section>
+
+      <!-- Menu Section -->
+      <section id="menu">
+        <h3>Let’s Eat Something <span class="highlight">Delicious</span></h3>
+        <h2>MENU</h2>
+        <div class="menu-items">
+          <div class="menu-card">
+            <img src="https://images.pexels.com/photos/1435907/pexels-photo-1435907.jpeg" alt="Paneer Pizza" />
+            <h4>Paneer Pizza</h4>
+            <p>Cheesy & spicy delight.</p>
+          </div>
+          <div class="menu-card">
+            <img src="https://images.pexels.com/photos/1639563/pexels-photo-1639563.jpeg" alt="Veg Burger" />
+            <h4>Veg Burger</h4>
+            <p>Crispy veg patty and sauces.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; Created by <a href="https://github.com/Vinit-Parab" target="_blank">Vinit Parab</a></p>
+    </footer>
+
+    <!-- Script -->
+    <script>
+      const slides = document.querySelectorAll(".slide");
+      let current = 0;
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.toggle("active", i === index);
+        });
+      }
+
+      function nextSlide() {
+        current = (current + 1) % slides.length;
+        showSlide(current);
+      }
+
+      function prevSlide() {
+        current = (current - 1 + slides.length) % slides.length;
+        showSlide(current);
+      }
+    </script>
+  </body>
+</html>
