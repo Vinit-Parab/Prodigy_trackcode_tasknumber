@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkyCast - Weather App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>🌤️ SkyCast</h1>
+    <p>Live weather updates at your fingertips</p>
+  </header>
+
+  <section class="search-bar">
+    <input type="text" id="location-input" placeholder="Enter city name">
+    <button id="search-btn">🔍 Search</button>
+    <button id="location-btn">📍 Use My Location</button>
+  </section>
+
+  <section class="weather-section">
+    <div id="weather-card" class="hidden">
+      <h2 id="city-name">--</h2>
+      <p id="weather-description">--</p>
+      <div class="details">
+        <p><strong>🌡️ Temperature:</strong> <span id="temperature">--</span>°C</p>
+        <p><strong>💧 Humidity:</strong> <span id="humidity">--</span>%</p>
+        <p><strong>🌬️ Wind Speed:</strong> <span id="wind-speed">--</span> m/s</p>
+      </div>
+    </div>
+    <div id="error-message" class="hidden">
+      <p>⚠️ Unable to fetch weather data. Please try again.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Powered by OpenWeatherMap • Made by Vinit 💙</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

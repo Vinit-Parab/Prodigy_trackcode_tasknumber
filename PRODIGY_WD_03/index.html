@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Game Board -->
+  <div class="center">
+    <!-- Hidden Inputs for Each Cell and Turn -->
+    <input type="radio" id="cell-0-x" name="cell-0" />
+    <input type="radio" id="cell-0-o" name="cell-0" />
+    <input type="radio" id="cell-1-x" name="cell-1" />
+    <input type="radio" id="cell-1-o" name="cell-1" />
+    <input type="radio" id="cell-2-x" name="cell-2" />
+    <input type="radio" id="cell-2-o" name="cell-2" />
+    <input type="radio" id="cell-3-x" name="cell-3" />
+    <input type="radio" id="cell-3-o" name="cell-3" />
+    <input type="radio" id="cell-4-x" name="cell-4" />
+    <input type="radio" id="cell-4-o" name="cell-4" />
+    <input type="radio" id="cell-5-x" name="cell-5" />
+    <input type="radio" id="cell-5-o" name="cell-5" />
+    <input type="radio" id="cell-6-x" name="cell-6" />
+    <input type="radio" id="cell-6-o" name="cell-6" />
+    <input type="radio" id="cell-7-x" name="cell-7" />
+    <input type="radio" id="cell-7-o" name="cell-7" />
+    <input type="radio" id="cell-8-x" name="cell-8" />
+    <input type="radio" id="cell-8-o" name="cell-8" />
+
+    <div id="board">
+      <!-- Each Tile -->
+      <div class="tile" id="tile-0">
+        <label for="cell-0-x"></label>
+        <label for="cell-0-o"></label>
+        <div></div>
+      </div>
+      <div class="tile" id="tile-1">
+        <label for="cell-1-x"></label>
+        <label for="cell-1-o"></label>
+        <div></div>
+      </div>
+      <div class="tile" id="tile-2">
+        <label for="cell-2-x"></label>
+        <label for="cell-2-o"></label>
+        <div></div>
+      </div>
+      <div class="tile" id="tile-3">
+        <label for="cell-3-x"></label>
+        <label for="cell-3-o"></label>
+        <div></div>
+      </div>
+      <div class="tile" id="tile-4">
+        <label for="cell-4-x"></label>
+        <label for="cell-4-o"></label>
+        <div></div>
+      </div>
+      <div class="tile" id="tile-5">
+        <label for="cell-5-x"></label>
+        <label for="cell-5-o"></label>
+        <div></div>
+      </div>
+      <div class="tile" id="tile-6">
+        <label for="cell-6-x"></label>
+        <label for="cell-6-o"></label>
+        <div></div>
+      </div>
+      <div class="tile" id="tile-7">
+        <label for="cell-7-x"></label>
+        <label for="cell-7-o"></label>
+        <div></div>
+      </div>
+      <div class="tile" id="tile-8">
+        <label for="cell-8-x"></label>
+        <label for="cell-8-o"></label>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- End Game Overlay -->
+    <div id="end">
+      <div class="center" id="message">
+        <input type="reset" value="Play Again" onclick="window.location.reload()" />
+      </div>
+    </div>
+  </div>
+</body>
+</html>

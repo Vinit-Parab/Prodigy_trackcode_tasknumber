@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.stopwatch-container {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  width: 360px;
+  text-align: center;
+}
+
+.stopwatch-container h1 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: #fefefe;
+}
+
+.stopwatch {
+  font-size: 42px;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.controls button {
+  flex: 1;
+  padding: 12px 0;
+  background-color: #14b8a6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #0d9488;
+}
+
+.lap-times {
+  list-style: none;
+  max-height: 180px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.lap-times li {
+  text-align: left;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
